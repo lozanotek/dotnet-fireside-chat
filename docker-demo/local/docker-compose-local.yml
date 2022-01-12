@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  api:
+    container_name: sample-local
+    image: sample:local
+    ports:
+      - "8080:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5000

@@ -1,0 +1,14 @@
+﻿@model Dictionary<string, string>
+
+<div class="text-center">
+    <h1 class="display-4">Sample App</h1>
+    @if(Model != null)
+    {
+        <ul>
+        @foreach(var item in Model)
+        {
+            <li class="">@item.Key - @item.Value</li>
+        }
+        </ul>
+    }
+</div>
